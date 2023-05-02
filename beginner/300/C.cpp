@@ -25,11 +25,11 @@ int main(){
             int ans = 0;
             if(c[i][j] == '#'){
                 if(i==0 || i==h-1 || j==0 || j==w-1) continue;
-                if(c[i-1][j-1] == '#' && c[i-1][j+1] == '#' && c[i+1][j-1] == '#' && c[i+1][j+1]){
-                    int ti=i, tj=j;
+                if(c[i-1][j-1] == '#' && c[i-1][j+1] == '#' && c[i+1][j-1] == '#' && c[i+1][j+1] == '#'){
+                    int ti=i-1, tj=j-1;
                     while(c[ti][tj] == '#'){
                         ans++;
-                        if(ti-1>=0 && tj-1>=0 && tj+1<w && ti+1<h){
+                        if(ti-1<0 || tj-1<0 || tj+1>w || ti+1>h){
                             break;
                         }
                         ti--;
