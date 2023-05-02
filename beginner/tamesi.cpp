@@ -1,11 +1,7 @@
-#include <bits/stdc++.h>
-#include <atcoder/all>
+#include<iostream>
 using namespace std;
-using namespace atcoder;
 
 int main(){
-    int n;
-    cin >> n;
-    dsu uf(n);
+    cout << "Hello, world!" << endl;
     return 0;
 }
