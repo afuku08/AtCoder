@@ -9,9 +9,15 @@ bool isPrime(long long N){
     return true;
 }
 
-int main(){
-    for(int i=1;i<=10;i++){
-        cout << i << ":" << isPrime(i) << endl;
+long long countPrime(long long N){
+    long long ans = 0;
+    for(long long i=2;i <= N;i++){
+        if(isPrime(i)) ans ++;
     }
+    return ans;
+}
+
+int main(){
+    cout << countPrime(300000) << endl;
     return 0;
 }
