@@ -8,6 +8,6 @@ int main(){
     cin >> n;
     int tmp = 0;
     for(int i=0;i<s.length();i++){
-        if()
+        
     }
 }
