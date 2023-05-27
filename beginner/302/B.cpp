@@ -9,7 +9,9 @@ int main(){
     for(auto &a : s) cin >> a;
 
     for(int i=0;i<h;i++){
-        if(s[i].find("snuke") != string::npos  || )
+        if(s[i].find("snuke") != string::npos  || s[i].find("ekuns") != string::npos){
+            
+        }
     }
 
     for(int i=0;i<h;i++){
